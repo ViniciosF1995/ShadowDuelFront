@@ -1,0 +1,133 @@
+/* Resetando margens e padding para todos os elementos */
+
+
+/* Garantindo que o html e body ocupem toda a altura da janela */
+html, body {
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./src/assets/images/imgInicial.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.parteCima {
+    height: 100%;
+    width: 50%;
+   
+  
+}
+.parteBaixo {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.divLogo {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.Logo {
+    width: 120px;
+    height: 120px;
+}
+.shadowDuel {
+    width: 250px;
+    height: 80px;
+}
+.divCadastrar {
+    width: 90%;
+    max-width: 500px; /* Maxima largura para dispositivos grandes */
+    height: auto;
+    background-color: #202227;
+    border-radius: 20px;
+    padding: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.textoInicial {
+    text-align: center;
+}
+
+.tituloCadastro {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.subTitulo {
+    font-weight: 400;
+    color: #717885;
+    font-size: 18px;
+}
+
+.divDescricao {
+    width: 100%;
+}
+
+.descricaoInput {
+    margin-bottom: 10px;
+    color: #696F79;
+    font-weight: 400;
+}
+
+input {
+    padding: 15px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: #282A2F;
+    border: 0.5px solid #55595f;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border-color: #E92326;
+    outline: none;
+}
+
+a {
+    color: #717885;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+a:hover {
+    color: #E92326;
+}
+
+.botaoCadastrar {
+    padding: 15px;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 20px;
+    background-color: #E92326;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.botaoCadastrar:hover {
+    background-color: #C32024;
+}

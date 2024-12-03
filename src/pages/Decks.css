@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  width: 100%;
+}
+
+.containerDecks {
+  /* background-image: url('./src/assets/images/BackgroundDecks.png'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 150vh;
+  width: 100%;
+}
+
+.principal {
+  display: flex; /* Torna o layout flexível */
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+.decks {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 35%; /* Ocupa 50% da largura */
+  gap: 25px;
+  max-width: 100%; 
+  padding: 20px;
+ 
+  
+}
+
+.DeckCartas {
+  width: 150px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.DeckCartas:hover {
+  transform: scale(1.05);
+  /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); */
+}
+
+.DeckCartas:active {
+  transform: scale(0.95);
+}
+
+.cartasTotais {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Container das cartas selecionadas */
+.aparicaoCartas {
+  width: 65%; /* Ocupa 65% da largura */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 25px;
+  max-height: 100%; /* Limita a altura máxima para não ocupar toda a tela */
+  overflow-y: auto; /* Permite rolar as cartas caso excedam o tamanho */
+}
+
+/* Título do deck */
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 20px; /* Distância do título para as cartas */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Container para as cartas (flexível e com espaçamento) */
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+  overflow-x: auto; 
+  padding-bottom: 10px;
+  
+}
+
+/* Estilo para cada carta */
+.card {
+  width: 300px; /* Largura ajustada para 140px */
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Leve elevação quando hover */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Aumenta o sombreamento */
+}
+
+.card img {
+  width: 100%;
+  height: 250px; /* Mantém a altura constante para todas as imagens */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Nome da carta abaixo da imagem */
+.card p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #444;
+  text-transform: capitalize;
+}

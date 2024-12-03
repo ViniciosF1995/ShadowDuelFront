@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+
+.containerCaminho {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Altura total da janela */
+    background-image: url('./src/assets/images/backgroundCaminho.png'); /* Caminho da imagem local */
+    background-size: cover; /* Faz a imagem cobrir a área inteira */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-direction:column;
+}
+
+.fundoTitulo{
+    height: 100px;
+    width: 900px;
+    background-color: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.titulo{
+    color: white;
+    font-size:70px;
+    width: 1000px;
+}
+
+.caminhos{
+    display: flex;
+    gap: 30px;
+}
+
+.cartas{
+    width: 170px;
+}
+
+.cartas:hover{
+    opacity: 90%;
+    cursor: pointer;
+}
+
+.botaoComecar{
+    background-color: #fff;
+    padding: 15px;
+    width: 200px;
+    border-radius:500px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    border: 0;
+}
+
+.botaoComecar:hover{
+    opacity: 85%;
+}

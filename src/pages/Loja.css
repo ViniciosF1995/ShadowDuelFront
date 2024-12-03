@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #D3D6CF;
+}
+
+/* .containerLoja {
+
+
+} */
+
+
+.divMercador {
+    height: 50vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.imgMercador {
+    width: 49vh;
+}
+.divDeck {
+    display: flex;
+    flex-direction: row;
+
+
+
+}
+.divDecks {
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgDecks {
+    width: 25vh;
+}
+.imgDecks:hover {
+    width: 30vh;
+    cursor: pointer;
+}
+

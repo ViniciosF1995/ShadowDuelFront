@@ -1,0 +1,98 @@
+/* Resetando o estilo padrão de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo 100% de altura e largura para a estrutura principal */
+html, body {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Contêiner de fundo da página de perfil */
+.containerPerfil {
+    background-color: #D3D6CF;
+    height: 100vh;
+    width: 100%;
+}
+
+/* A página de perfil é um flexbox que centraliza o conteúdo */
+.paginaPerfil {
+    display: flex;
+    align-items: center; /* Alinha ao centro verticalmente */
+    justify-content: center; /* Alinha ao centro horizontalmente */
+    height: 100%;
+}
+
+/* Contêiner do conteúdo do perfil, com imagem de fundo e centralização */
+.conteudoPerfil {
+    display: flex;
+    align-items: center; /* Alinha ao centro verticalmente */
+    justify-content: center; /* Alinha ao centro horizontalmente */
+    height: 600px;
+    width: 600px;
+    background-image: url('./src/assets/images/QuadroPerfil.png');
+    background-position: center;
+    background-size: cover;
+    flex-direction: column; /* Organiza os itens de forma vertical */
+    gap: 70px; /* Espaço entre os itens dentro do contêiner */
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+/* A imagem do logo do perfil com espaçamento embaixo */
+.imagemLogoPerfil {
+    padding-bottom: 10px; /* Espaço abaixo da imagem */
+    width: 23vh;
+}
+
+/* Estilo para o texto do nome de usuário */
+.usernameTexto {
+    width: 500px;
+    color: aliceblue;
+}
+
+/* Estilo para o texto do perfil */
+.textoPerfil {
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo de forma vertical */
+    color: aliceblue;
+    align-items: flex-start; /* Corrigido de 'flex' para 'flex-start' */
+    width: 500px;
+    gap: 20px; /* Espaço entre os itens do texto */
+}
+
+/* A imagem do perfil */
+.ImagemPerfil {
+    display: flex;
+    max-width: 70px;  /* Limita a largura máxima */
+    max-height: 100px; /* Limita a altura máxima */
+    width: 150px;  /* Largura fixa para a imagem */
+    height: auto;  /* Mantém a proporção da altura em relação à largura */
+}
+
+/* Garantindo que o conteúdo do perfil seja responsivo */
+@media (max-width: 768px) {
+    .conteudoPerfil {
+      width: 90%; /* Tornar o conteúdo mais flexível em telas pequenas */
+      height: auto; /* Deixe a altura flexível também */
+      gap: 20px; /* Reduzir o espaçamento entre os itens */
+    }
+  
+    .imagemLogoPerfil {
+      width: 50%;  /* Ajustar o tamanho da imagem */
+      padding-bottom: 15px; /* Menos espaço abaixo da imagem */
+    }
+  
+    .usernameTexto, .textoPerfil {
+      width: 100%;  /* Garantir que os textos ocupem toda a largura disponível */
+      text-align: center; /* Centralizar o texto */
+    }
+  
+    .TextoNomePerfil, .TextoMoeda, .TextoDecks {
+      font-size: 1.2rem; /* Ajustar o tamanho da fonte para telas menores */
+    }
+  }
+  

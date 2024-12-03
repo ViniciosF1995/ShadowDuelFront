@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #D3D6CF;
+}
+.imgCartaCampo {
+    width: 22vh;
+}
+.imgCartaCampo:hover {
+    width: 23vh;
+    cursor: pointer;
+}
+.imgCartaMao {
+    width: 14vh;
+}
+.imgCartaMao:hover {
+    width: 15vh;
+    cursor: pointer;
+}
+.imgSemCarta {
+    width: 8vh;
+}
+.containerTelaBatalha {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.containerdeckAdversdario {
+    height: 100vh;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+
+}
+.divDeckAdversario {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.imgDeckOponente {
+    width: 10vh;
+}
+.divCartaAparece {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.imgCartaAparece {
+    width: 50vh
+
+}
+.imgCartaDesAparece {
+    width: 0px;
+}
+.containerDeckJogador {
+    height: 100vh;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.divInfoJogador {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.divBtnJogador {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btnJogador {
+    height: 10vh;
+    width: 50%;
+}
+.divDeckJogador {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.imgDeck {
+    width: 10vh;
+}
+.containerBatalha {
+    height: 100vh;
+    width: 60%;
+    border: 1px bold;
+}
+.divCartaBatalha {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.divMaoAdversario {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.divBatalhaAdversario {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.divBatalhaJogador {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}.divMaoJogador {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
