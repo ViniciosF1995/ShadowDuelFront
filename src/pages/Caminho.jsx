@@ -1,11 +1,15 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import {useNavigate } from 'react-router-dom'
 import './Caminho.css'
-import TelaBatalha from './TelaBatalha';
+import { useState } from 'react';
+import { useAuth } from '../contexts/AuthContext';
+import api from "../config/axios";
+
 
 function Caminho() {
-    
+   
     const navigate = useNavigate();
+  
     
     return (
         <div className='containerCaminho'>
@@ -23,11 +27,11 @@ function Caminho() {
                 <img className='cartas' src="./src/assets/images/caminhoDemonio.png" alt="" />
 
             </div>
-
+            
             <div className='divBotao'>
-                <button className='botaoComecar' onClick={() => navigate('/batalhas')}>Começar!</button>
+                { <button className='botaoComecar' onClick={() => navigate('/batalhas')}>Começar!</button> }
             </div>
-
+           
         </div>
     )
 }

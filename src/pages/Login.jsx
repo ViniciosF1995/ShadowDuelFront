@@ -22,7 +22,7 @@ const navigate = useNavigate();
         const response = await api.post('/auth/login', loginData);  
         console.log(response)    
         login(response.data.token);
-        navigate("/batalhas");
+        navigate("/caminho");
       } catch (error) {
         console.error('Erro ao buscar dados do usuário:', error);
       }
